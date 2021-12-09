@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contener-accueil {
+    text-align: center;
+}
+
+.contener-flex {
+    color: white;
+    background-color: rgb(203, 188, 178);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+    font-family: "HKGrotesk-Regular";
+    padding: 1%;
+}
+
+.contener-flex form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-container input {
+    border: 1px solid rgb(203, 188, 178);
+    border-radius: 20px;
+    color: rgb(203, 188, 178);
+    outline: none;
+    padding: 1%;
+}
+
+.btn-submit {
+    background-color: white;
+    margin: 5% 0%;
+    cursor: pointer;
+    padding: 4% !important;
+}
+
+.logo-pass-view{
+    margin: 2% 0%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 5%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pass-view {
+    fill: rgb(203, 188, 178);
+}
+
+@font-face {
+    font-family: "HKGrotesk-Regular";
+    src: url('../font/HKGrotesk-Regular.otf');
+}

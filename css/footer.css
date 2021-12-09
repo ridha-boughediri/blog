@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    min-height: 10vh;
+    height: 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(203, 188, 178);
+    font-family: "HKGrotesk-Regular";
+}
+
+.gitto {
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.gitto:hover {
+    transform: scale(1.1, 1.1) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+@font-face {
+    font-family: "HKGrotesk-Regular";
+    src: url('../font/HKGrotesk-Regular.otf');
+}

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.back-img-wall {
+    width: 100%;
+    height: 90%;
+}
+
+.back-img-wall img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.back-text-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: "HKGrotesk-Regular";
+}
+
+.back-title-wall {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.back-text-wall {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-title-wall {
+    transform: translateX(0px);
+    animation: slide-title-up 800ms ease-out 0s;
+}
+
+@keyframes slide-title-up {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.back-text-wall {
+    transform: translateX(0px);
+    animation: slide-text-up 800ms ease-out 0s;
+}
+
+@keyframes slide-text-up {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    90% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+article {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(203, 188, 178);
+    border-radius: 25px;
+    margin: 5%;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.card:hover {
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.card-a {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.content-img {
+    width: 100%;
+    height: 70%;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.text-view {
+    width: 80%;
+    height: 80%;
+}
+
+.content-text {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text-article {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-text img {
+    width: 40px;
+    height: 40px;
+}
+
+.hint {
+    position: absolute;
+    bottom: 2vw;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 6px;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    opacity: .65;
+    -webkit-animation: bounce 1.75s infinite;
+    animation: bounce 1.75s infinite;
+    font-size: 0;
+    left: 5.6vw;
+    margin-left: -14px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .hint {
+        left: auto;
+        right: 5.6vw;
+        margin-right: -14px;
+    }
+}
+
+.hint .down {
+    fill: #f9f9f9;
+    pointer-events: none;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.hint:hover .down {
+    transform: scale(1.2, 1.2) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.plusart {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0% 5% 0%;
+    border: 1px solid rgb(203, 188, 178);
+}
+
+.plusart p {
+    color: rgb(203, 188, 178);
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    cursor: pointer;
+    font-family: "HKGrotesk-Regular";
+}
+
+.plusart p:hover {
+    transform: scale(1.2, 1.2) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+@font-face {
+    font-family: "HKGrotesk-Regular";
+    src: url("../font/HKGrotesk-Regular.otf");
+}

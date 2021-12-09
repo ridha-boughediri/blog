@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "HKGrotesk-Bold";
+}
+
+html,
+body {
+    width: 100%;
+    min-height: max-content;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    min-height: 100%;
+    height: max-content;
+    padding-top: 5%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 60%;
+}
+
+section p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    height: max-content;
+}
+
+.contener-flex {
+    color: rgb(203, 188, 178);
+    border: 1px solid rgb(203, 188, 178);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    min-height: 80%;
+    height: max-content;
+    box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+    font-family: "HKGrotesk-Regular";
+    padding: 1%;
+}
+
+#contener-flex-id {
+    margin-bottom: 5vh;
+}
+
+.contain-com {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-com {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(203, 188, 178);
+    border: 1px solid rgb(203, 188, 178);
+    padding: 2vh;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(203, 188, 178);
+    border: 1px solid rgb(203, 188, 178);
+    padding: 2vh;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.card-body p {
+    width: 80%;
+    margin: 0% 10%;
+    word-wrap : break-word;
+}
+
+.contener-flex h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.contener-flex form,
+.contain-com,
+.nocolink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.login-container textarea {
+    border: 1px solid rgb(203, 188, 178);
+    border-radius: 10px;
+    color: rgb(203, 188, 178);
+    outline: none;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-container textarea::placeholder {
+    color: rgb(203, 188, 178);
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(203, 188, 178);
+    border-radius: 20px;
+    color: rgb(203, 188, 178);
+    outline: none;
+    padding: 3%;
+    width: 100%;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: rgb(203, 188, 178);
+    border: 1px solid white;
+    color: white;
+}
+
+@font-face {
+    font-family: "HKGrotesk-Bold";
+    src: url("../font/HKGrotesk-Bold.otf");
+}
